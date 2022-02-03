@@ -213,3 +213,7 @@ btnFollow.addEventListener('click', function(){
     btnFollow.style.display = "none"
 })
 
+const paramsUser1 = new URLSearchParams("?user=user1")
+
+const paramsUser2 = new URLSearchParams("?user=user2")
+
