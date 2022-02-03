@@ -6,7 +6,12 @@ var user1 = {
     followerCount: 47900000,
     avatarURL: 'assets/elonmusk.jpg',
     coverPhotoURL: 'assets/elonmusk-cover.jpeg',
-    tweets: [{
+    tweets: [
+        {
+        
+            text: 'Boa tarde Aaron',
+            timestamp: '2/3/2022 19:01:20'
+        },{
         
         text: 'Nice to day to harvest Jaboticaba',
         timestamp: '2/3/2022 06:01:20'

@@ -146,7 +146,12 @@ if(finalTimeAgo<1){
 
 if (currentUser==="user1"){
   console.log('got it')
-
+  function minifiedFollowerCount(){
+    if (user1.followerCount>999999){
+      let minifiedValue= user1.followerCount/1000000
+      return minifiedValue+"M"
+    }
+    }
 
 
 
@@ -219,7 +224,13 @@ user1.tweets.forEach(function (tweets, i) {
 
 if (currentUser==="user2"){
   console.log('got it')
-
+  console.log('got it')
+  function minifiedFollowerCount(){
+    if (user2.followerCount>999999){
+      let minifiedValue= user2.followerCount/1000000
+      return minifiedValue+"M"
+    }
+    }
 
 
 
@@ -338,26 +349,26 @@ var btnFollow = document.body.querySelector('.btn-follow');
 var btnUnfollow = document.body.querySelector('.btn-unfollow');
 
 btnFollowing.addEventListener("mouseover", function( event ) {
-  btnFollowing.style.display = "none";
-  btnUnfollow.style.display = "block"
+btnFollowing.style.display = "none";
+btnUnfollow.style.display = "block"
 })
 
 btnFollowing.addEventListener("mouseleave", function( event ) {
-  btnFollowing.style.display = "block";
-  btnUnfollow.style.display = "none"
+btnFollowing.style.display = "block";
+btnUnfollow.style.display = "none"
 })
 
 
-btnUnfollow.addEventListener('click', function(){
-  btnFollowing.style.display = "none";
-  btnFollow.style.display = "block"
+/btnUnfollow.addEventListener('click', function(){
+btnFollowing.style.display = "none";
+btnFollow.style.display = "block"
 })
 
 
 
 btnFollow.addEventListener('click', function(){
-  btnFollowing.style.display = "block";
-  btnFollow.style.display = "none"
+btnFollowing.style.display = "block";
+btnFollow.style.display = "none"
 })
 
 
